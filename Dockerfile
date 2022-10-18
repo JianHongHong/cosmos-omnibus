@@ -72,7 +72,6 @@ ARG PROJECT_BIN=$PROJECT
 ARG BUILD_DIR=/data
 
 COPY --from=build /bin/$PROJECT_BIN /bin/$PROJECT_BIN
-COPY --from=build $BUILD_DIR/deps/ /
 
 #
 # Optional image to install from binary

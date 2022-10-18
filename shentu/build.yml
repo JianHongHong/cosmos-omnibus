@@ -8,7 +8,7 @@ services:
         PROJECT: shentu
         PROJECT_BIN: certik
         PROJECT_DIR: .certik
-        VERSION: v2.2.0
+        VERSION: v2.5.0
         REPOSITORY: https://github.com/certikfoundation/shentu
         NAMESPACE: CERTIK
     ports:
@@ -21,7 +21,7 @@ services:
       - P2P_POLKACHU=1
       - STATESYNC_POLKACHU=1
       # - SNAPSHOT_POLKACHU=1
-    env_file:
-      - ../.env
+    # env_file:
+    #   - ../.env
     volumes:
       - ./node-data:/root/.certik
